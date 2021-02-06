@@ -1,0 +1,138 @@
+.footer {
+
+    background: $dark;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+
+    &__inner {
+        @include flex;
+        align-items: center;
+    }
+
+    &__left, &__right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__right {
+        justify-content: flex-end;
+    }
+
+    // .footer__logo
+
+    &__logo {
+        max-width: 165px;
+    }
+
+    // .footer__logo-img
+
+    &__logo-img {}
+
+    // .footer__logo-descr
+
+    &__logo-descr {
+        margin-top: 5px;
+    }
+
+    // .footer__address
+
+    &__address {
+        max-width: 254px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        opacity: 0.8;
+        margin-left: 68px;
+    }
+
+    // .footer__links
+
+    &__links {}
+
+    // .footer__politics
+
+    &__politics {}
+
+    // .footer__politics-link
+
+    &__politics-link {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        span {
+            border-bottom: 1px solid rgba(#fff, .8);
+        }
+    }
+
+    &__politics-link + &__politics-link {
+        margin-top: 5px;
+    }
+
+    // .footer__socials
+
+    &__socials {
+        width: 84px;
+        @include flex;
+        margin: 0 33px;
+    }
+
+    // .footer__social-item
+
+    &__social-item {
+        //display: inline-block;
+    }
+
+    &__social-item + &__social-item {
+        //margin-left: 15px;
+    }
+
+    // .footer__social-link
+
+    &__social-link {}
+
+    // .footer__social-icon
+
+    &__social-icon {}
+
+    // .footer__developer
+
+    &__developer {
+        position: relative;
+        width: 213px;
+        height: 167px;
+        background: #242424;
+        border-radius: 8px;
+        //clip-path: ;
+    }
+
+    // .footer__developer-logo
+
+    &__developer-logo {
+        position: absolute;
+        top: 21px;
+        left: 28px;
+    }
+
+    // .footer__developer-slogan
+
+    &__developer-slogan {
+        position: absolute;
+        bottom: 47px;
+        right: 25px;
+        max-width: 111px;
+        padding-left: 20px;
+        font-size: 10px;
+        line-height: 14px;
+        &:before {
+           content: '';
+           position: absolute;
+           top: 5px;
+           left: 0;
+           width: 14px;
+           height: 1px;
+           background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.tabs {
+    @include flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+    // .tabs__content
+
+    &__content {
+        display: none;
+    }
+
+    // .tabs__content--active
+
+    &__content--active {
+        display: block;
+    }
+}
+
+.tab {
+    font-size: 16px;
+    line-height: 50px;
+    color: rgba(#000, .45);
+    cursor: pointer;
+    &--active {
+        font-weight: 600;
+        color: $blue;
+        border-bottom: 3px solid $blue;
+    }
+}

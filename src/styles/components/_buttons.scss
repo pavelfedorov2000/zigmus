@@ -1,0 +1,25 @@
+.button {
+    background: $accent;
+    box-shadow: 0px 4px 20px rgba(255, 107, 0, 0.35);
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+
+    &--transparent {
+        background-color: transparent;
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: none;
+        color: $blue;
+    }
+
+    &--white-border {
+        border-color: #fff;
+        color: #fff
+    }
+
+    &--blue-border {
+        border-color: $blue;
+        color: $blue;
+    }
+}

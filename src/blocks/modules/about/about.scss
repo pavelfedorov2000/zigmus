@@ -1,0 +1,104 @@
+.about {
+
+    padding-bottom: 70px;
+
+    &__title {
+        margin-bottom: 29px;
+    }
+
+    // .about__process-list
+
+    &__process-list {
+        @include flex;
+        margin: 80px 0 60px;
+    }
+
+    // .about__buttons
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        margin: 0 10px;
+    }
+
+    // .about__benefits-link
+
+    &__benefits-link {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    // .about__video-link
+
+    &__video-link {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.list {
+
+    // .list__item
+
+    &__item {}
+
+    // .list__item-icon
+
+    &__item-icon {
+        border-radius: 50%;
+        background-color: $blue;
+        @include center;
+    }
+
+    // .list__item-title
+
+    &__item-title {}
+}
+
+.about-process {
+
+    // .about-process__item
+
+    &__item {
+        position: relative;
+        max-width: 259px;
+        @include column;
+        align-items: center;
+        text-align: center;
+        &:after {
+           content: url('../img/dashed-line.svg');
+           position: absolute;
+           top: 41px;
+           left: 90%;
+           width: 274px;
+           height: 27px;
+        }
+        &:last-child:after {
+            display: none;
+        }
+    }
+
+    // .about-process__item-icon
+
+    &__item-icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    // .about-process__item-descr
+
+    &__item-descr {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

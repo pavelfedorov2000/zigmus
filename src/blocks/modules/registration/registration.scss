@@ -1,0 +1,91 @@
+.registration {
+
+    padding-bottom: 180px;
+    //background-image: url('../img/macbook.png');
+    //background-position: 0 bottom;
+    //background-repeat: no-repeat;
+
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+        //@include flex;
+        //align-items: center;
+    }
+
+    &__img {
+        display: none;
+        width: 912px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    // .registration__title
+
+    &__title {
+        max-width: 944px;
+        margin: 0 auto;
+        margin-bottom: 112px;
+    }
+
+    // .registration__content
+
+    &__content {}
+
+    // .registration__list-title
+
+    &__list-title {
+        max-width: 449px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    // .registration__list
+
+    &__list {
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        align-items: center;
+    }
+
+    // .registration__item
+
+    &__item + &__item {
+        margin-top: 20px;
+    }
+
+    // .registration__item-icon
+
+    &__item-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    // .registration__item-title
+
+    &__item-title {}
+
+    // .registration__buttons
+
+    &__buttons {
+    }
+
+    // .registration__btn
+
+    &__btn {
+        padding: 12px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    &__btn + &__btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+    }
+}

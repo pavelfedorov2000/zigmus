@@ -1,0 +1,100 @@
+.header {
+
+    font-size: 14px;
+    line-height: 15px;
+    color: #fff;
+
+    // .header__top
+
+    &__top {
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    &__top-inner, &__menu-list {
+        @include flex;
+    }
+
+    // .header__logo
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__logo-img
+
+    &__logo-img {
+        width: 140px;
+    }
+
+    // .header__logo-descr
+
+    &__logo-descr {
+        max-width: 117px;
+        margin-left: 19px;
+    }
+
+    // .header__user-items
+
+    &__user-items {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__lang
+
+    &__lang {
+        background-color: transparent;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    // .header__question
+
+    &__question {
+        margin-left: 56px;
+        span {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    // .header__buttons
+
+    &__buttons {
+        margin-left: 49px;
+    }
+
+    // .header__btn
+
+    &__btn {
+        display: inline-block;
+        padding: 12px 26px;
+        box-shadow: none;
+    }
+
+    &__btn + &__btn {
+        margin-left: 20px;
+    }
+
+    // .header__menu
+
+    &__menu {
+        padding-top: 20px;
+    }
+
+    // .header__menu-list
+
+    &__menu-list {}
+
+    // .header__menu-item
+
+    &__menu-item {}
+
+    // .header__menu-link
+
+    &__menu-link {
+        font-size: 14px;
+        line-height: 15px;
+    }
+}

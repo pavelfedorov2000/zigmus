@@ -1,0 +1,102 @@
+.forget {
+
+    position: relative;
+    //min-height: 965px;
+    background-color: $light-blue-bg;
+    padding: 96px 0 127px;
+    //background-size: cover;
+    //background-position: center;
+    //background-repeat: no-repeat;
+
+    /* &:before {
+       content: '';
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 0;
+       width: 864px / 1920px * 100%;
+       height: 100%;
+       background-color: $blue;
+       //clip-path: ;
+    } */
+
+    &__head {
+        max-width: 945px;
+        margin-bottom: 46px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        span {
+            color: $accent;
+        }
+    }
+
+    // .forget__content
+
+    &__content {}
+
+    // .forget__items
+
+    &__items {
+        width: 360px * 2 + 28px;
+        @include flex;
+        flex-wrap: wrap;
+        margin-bottom: 42px;
+    }
+
+    // .forget__item
+
+    &__item {
+        max-width: 360px;
+        min-height: 214px;
+        @include column;
+        justify-content: space-between;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+        border-radius: 6px;
+        padding: 30px 20px 30px 30px;
+        margin-bottom: 27px;
+        color: #283754;
+        line-height: 22px;
+        transition: .3s ease all;
+        &:hover {
+            background: $blue;
+            //background: radial-gradient(50% 50% at 50% 50%, rgba(242, 251, 255, 0.6) 0%, rgba(212, 242, 255, 0) 100%);
+            //filter: blur(150px);
+            //transform: matrix(0.87, -0.42, 0.54, 0.89, 0, 0);
+            color: #fff;
+            svg path {
+                fill: #fff;
+            }
+        }
+    }
+
+    // .forget__item-img
+
+    &__item-img {}
+
+    // .forget__item-title
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    // .forget__item-text
+
+    &__item-text {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    // .forget__btn
+
+    &__btn {
+        padding: 14px 18px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 50px;
+    }
+}

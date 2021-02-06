@@ -1,0 +1,118 @@
+.security {
+
+    background-color: $light-blue-bg;
+    background-position: center 70px;
+    background-size: contain;
+    padding: 149px 0 278px;
+    min-height: 1100px;
+
+    // .security__title
+
+    &__title {
+        max-width: 944px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        position: relative;
+        min-height: 446px;
+        margin-top: 94px;
+    }
+
+    // .security__item
+
+    &__item {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 379px;
+        border-radius: 10px;
+        padding: 27px 12px 26px 20px;
+        transition: .3s all;
+
+        &:hover {
+            align-items: flex-start;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+            .security {
+                &__item-title {
+                    margin-bottom: 10px;
+                }
+                &__item-text {
+                    display: block;
+                }
+            }
+        }
+
+        &:nth-child(odd) {
+            .security {
+                &__item-icon {
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            .security {
+                &__item-icon {
+                    margin-left: 7px;
+                }
+            }
+        }
+
+        &--verified {
+            top: 10px;
+            right: 30px;
+        }
+
+        &--like {
+            top: 50px;
+            left: -10px;
+        }
+
+        &--reviews {
+            @include centerY;
+            right: -50px;
+        }
+
+        &--star {
+            left: 70px;
+            bottom: 30px;
+        }
+
+        &--filter {
+            bottom: -35px;
+            right: 15px;
+        }
+    }
+
+    // .security__item-content
+
+    &__item-content {
+        max-width: 290px;
+        line-height: 22px;
+    }
+
+    // .security__item-title
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    // .security__item-text
+
+    &__item-text {
+        display: none;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    // .security__item-icon
+
+    &__item-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
