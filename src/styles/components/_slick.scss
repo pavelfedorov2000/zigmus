@@ -3,6 +3,7 @@
         position: absolute;
         @include centerX;
         bottom: 18px;
+        z-index: 1000;
         li {
             display: inline-block;
             margin: 0 16px;

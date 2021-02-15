@@ -2,10 +2,17 @@
 
     padding-bottom: 120px;
 
+    &__container {
+        padding-left: 0;
+        @media(max-width: 767px) {
+            padding-left: 30px;
+        }
+    }
+
     // .benefits__tabs
 
     &__tabs {
-        margin-bottom: 140px;
+        //margin-bottom: 140px;
         @media(max-width: 1200px) {
             margin-bottom: 100px;
         }
@@ -36,12 +43,21 @@
         }
     }
 
+    &__img {
+        width: 50%;
+        @media(max-width: 767px) {
+            width: 459px;
+            height: 459px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
     // .benefits__img
 
-    &__img {
-        max-width: 100%;
-        height: auto;
-    }
+    &__img {}
 
     // .benefits__content
 

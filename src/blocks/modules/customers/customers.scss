@@ -24,7 +24,11 @@
     }
 
     &__title {
+        @media(max-width: 991px) {
+            width: 59%;
+        }
         @media(max-width: 767px) {
+            width: 100%;
             text-align: center;
             margin-bottom: 20px;
         }

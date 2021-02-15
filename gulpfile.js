@@ -114,14 +114,14 @@ function images() {
         ) */
         //.pipe(dest(path.build.img))
         .pipe(src(path.src.img))
-        /* .pipe(
+        .pipe(
             imagemin({
                 progressive: true,
                 svgoPlugins: [{ removeViewBox: false }],
                 interPlaced: true,
                 optimizationLevel: 3 // 0 to 7
             })
-        ) */
+        )
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream());
 }

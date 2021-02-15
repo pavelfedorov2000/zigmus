@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+.wrapper {
+    //position: relative;
+    overflow-x: hidden;
+}
+
 .section {
     padding-top: 120px;
 
@@ -18,20 +23,14 @@
         padding: 60px 0;
     }
 
-    &__head {
+    /* &__head {
         text-align: center;
         margin: 0 auto;
         &--left {
             text-align: left;
             margin: 0;
-            /* .section {
-                &__title {
-                    margin-right: auto;
-                    text-align: left;
-                }
-            } */
         }
-    }
+    } */
 
     &__title {
         font-weight: 700;
@@ -40,7 +39,7 @@
         text-align: center;
         &--left {
             text-align: left;
-            margin: 0;
+            //margin: 0;
         }
         &--white {
             color: #fff;
@@ -54,6 +53,10 @@
     &__text {
         font-size: 16px;
         line-height: 26px;
+        text-align: center;
+        &--left {
+            text-align: left;
+        }
         @media(max-width: 575px) {
             font-size: 14px;
             line-height: 17px;

@@ -1,10 +1,6 @@
 .registration {
 
-    padding-bottom: 180px;
-    //background-image: url('../img/macbook.png');
-    //background-size: contain;
-    //background-position: left 122px;
-    //background-repeat: no-repeat;
+    padding-bottom: 120px;
     @media(max-width: 767px) {
         background-image: none;
     }
@@ -14,13 +10,21 @@
         //justify-content: flex-end;
         @include flex;
         align-items: center;
+        @media(max-width: 991px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__img {
-        //display: none;
         width: 912px / 1920px * 100%;
-        max-width: 100%;
-        height: auto;
+        @media(max-width: 991px) {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 
     // .registration__title
@@ -28,16 +32,17 @@
     &__title {
         max-width: 944px;
         margin: 0 auto;
-        margin-bottom: 112px;
+        margin-bottom: 60px;
+        //margin-bottom: 112px;
         @media(max-width: 991px) {
             max-width: 70%;
+            text-align: left;
+            margin-left: 0;
         }
         @media(max-width: 767px) {
+            max-width: 100%;
             text-align: center;
             margin-bottom: 40px;
-        }
-        @media(max-width: 575px) {
-            max-width: 100%;
         }
     }
 
@@ -47,6 +52,12 @@
         width: 50%;
         //display: flex;
         //justify-content: flex-end;
+        @media(max-width: 1250px) {
+            width: 75%;
+        }
+        @media(max-width: 991px) {
+            width: 100%;
+        }
     }
 
     // .registration__list-title
@@ -61,6 +72,7 @@
             text-align: center;
             font-size: 18px;
             line-height: 22px;
+            margin: 0 auto 40px;
         }
         @media(max-width: 575px) {
             max-width: 100%;
@@ -112,21 +124,34 @@
 
     // .registration__buttons
 
-    &__buttons {}
+    &__buttons {
+        @media(max-width: 767px) {
+            @include column;
+            align-items: center;
+        }
+    }
 
     // .registration__btn
 
     &__btn {
         display: inline-block;
-        height: 68px;
         padding: 12px 30px;
         font-weight: 600;
         font-size: 16px;
         line-height: 50px;
         @media(max-width: 767px) {
+            display: flex;
+            align-items: center;
+            width: 260px;
+            height: 56px;
+            padding: 6px 16px;
             font-size: 14px;
             line-height: 24px;
             margin: 0 auto;
+        }
+        @media(max-width: 575px) {
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
 
@@ -142,5 +167,8 @@
 
     &__enter-btn {
         width: 208px;
+        @media(max-width: 767px) {
+            width: 260px;
+        }
     }
 }

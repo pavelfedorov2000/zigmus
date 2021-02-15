@@ -17,8 +17,13 @@
 	// .video__inner
 	&__inner {
         @include center;
-        @media(max-width: 767px) {
+        @media(max-width: 1200px) {
+            width: 100%;
+            justify-content: space-between;
+        }
+        @media(max-width: 991px) {
             flex-direction: column-reverse;
+            justify-content: flex-start;
             align-items: flex-start;
         }
     }
@@ -52,6 +57,9 @@
 	// .video__content
 	&__content {
         margin-left: 133px;
+        @media(max-width: 991px) {
+            margin-left: 0;
+        }
         @media(max-width: 767px) {
             margin-left: 0;
             margin-bottom: 10px;
@@ -64,7 +72,21 @@
         font-size: 50px;
         line-height: 60px;
         margin-bottom: 34px;
+        @media(max-width: 1200px) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @media(max-width: 991px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
         @media(max-width: 767px) {
+            font-size: 26px;
+            line-height: 36px;
+        }
+        @media(max-width: 575px) {
+            font-size: 22px;
+            line-height: 26px;
             margin-bottom: 10px;
         }
     }

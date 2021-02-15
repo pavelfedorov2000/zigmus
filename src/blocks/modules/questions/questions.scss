@@ -1,6 +1,15 @@
 .questions {
 
     padding-bottom: 127px;
+    @media(max-width: 991px) {
+        padding-top: 300px;
+    }
+    @media(max-width: 767px) {
+        padding-top: 200px;
+    }
+    @media(max-width: 575px) {
+        padding-top: 150px;
+    }
 
     &__content {
         @include column;

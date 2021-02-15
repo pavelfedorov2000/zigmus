@@ -2,27 +2,15 @@
 
     position: relative;
     background-size: cover;
-    background-position: 0 0;
+    background-position: center;
     background-repeat: no-repeat;
-    min-height: 769px;
+    min-height: 769px + 94px;
     padding-top: 11px;
-    padding-bottom: 213px;
-    &:before {
-       content: '';
-       position: absolute;
-       top: 0;
-       right: 0;
-       bottom: 0;
-       left: 0;
-       z-index: 0;
-       width: 100%;
-       height: 100%;
-       background-color: rgba(35, 110, 255, 0.8);
-    }
+    //padding-bottom: 94px;
     &:after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 88px;
         right: 0;
         z-index: 10;
         width: (1920px - $container) / 2;
@@ -36,37 +24,24 @@
         }
     }
 
-    &__container-img {
-        position: absolute;
-        right: -1px;
-        bottom: -94px;
-        z-index: 1;
-        /* img {
-            max-width: 100%;
-            height: auto;
-        } */
-    }
-
-    &__man-img {
-        position: absolute;
-        bottom: 0;
-        right: 362px / 1920px * 100%;
-        z-index: 2;
-    }
-
     &__inner {
         @include flex;
         align-items: flex-end;
         padding-top: 97px;
+        margin-bottom: 66px;
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__content {
         position: relative;
         z-index: 1;
-        max-width: 706px;
+        max-width: 720px;
         color: #fff;
         @media(max-width: 767px) {
             max-width: 100%;
+            margin-bottom: 50px;
         }
     }
 
@@ -218,7 +193,7 @@
     &__numbers {
         position: absolute;
         @include centerX;
-        bottom: 0;
+        bottom: 88px;
         z-index: 99;
         width: 100%;
         display: flex;
@@ -279,6 +254,10 @@
 
     &__notify {
         margin-right: 110px;
+        margin-top: 24px;
+        @media(max-width: 767px) {
+            margin-right: 50px;
+        }
     }
 }
 
