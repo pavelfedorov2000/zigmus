@@ -1,11 +1,22 @@
 .container {
-    max-width: $container + 15px * 2;
-    padding: 0 15px;
+    max-width: $container + 30px * 2;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
 .section {
     padding-top: 120px;
+
+    @media(max-width: 1200px) {
+        padding: 100px 0;
+    }
+    @media(max-width: 991px) {
+        padding: 80px 0;
+    }
+
+    @media(max-width: 767px) {
+        padding: 60px 0;
+    }
 
     &__head {
         text-align: center;
@@ -13,12 +24,12 @@
         &--left {
             text-align: left;
             margin: 0;
-            .section {
+            /* .section {
                 &__title {
                     margin-right: auto;
                     text-align: left;
                 }
-            }
+            } */
         }
     }
 
@@ -26,6 +37,7 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 43px;
+        text-align: center;
         &--left {
             text-align: left;
             margin: 0;
@@ -33,11 +45,19 @@
         &--white {
             color: #fff;
         }
+        @media(max-width: 575px) {
+            font-size: 22px;
+            line-height: 26px;
+        }
     }
 
     &__text {
         font-size: 16px;
         line-height: 26px;
+        @media(max-width: 575px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
         span {
             font-weight: 700;
         }
@@ -49,60 +69,10 @@
     align-items: center;
 }
 
-.video-link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-    &__player {
-        width: 44px;
-        height: 44px;
-        border: 1px solid #FFFFFF;
-        margin-right: 14px;
-        &:before {
-            width: 38px;
-            height: 38px;
-            background-color: #fff;
-        }
-        &:after {
-            width: 9px;
-            height: 10px;
-        }
-    }
-    &--blue {
-        color: $blue;
-        .video-link__player {
-            border-color: $blue;
-            &:before {
-                background-color: $blue;
-            }
-            &:after {
-                background-image: url('../img/icons/video-player.svg');
-            }
-        }
-    }
-}
-
-.video-icon {
-    position: relative;
-    border-radius: 50%;
-    border: 1px solid $accent;
-    &:before, &:after {
-        content: '';
-        position: absolute;
-        @include centerXY;
-    }
-    &:before {
-        border-radius: 50%;
-        background-color: $accent;
-    }
-}
-
 @import '../components/buttons';
 @import '../components/slick';
 @import '../components/logo';
 @import '../components/list';
 @import '../components/tabs';
 @import '../components/range';
+@import '../components/video-player';

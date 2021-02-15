@@ -1,6 +1,4 @@
 .list {
-
-    color: #343434;
     
     &__title {
         font-weight: 700;
@@ -13,6 +11,7 @@
     }
 
     &__item-icon {
+        @include center;
         border-radius: 50%;
         background-color: $blue;
     }

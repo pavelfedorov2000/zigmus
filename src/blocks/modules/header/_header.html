@@ -25,6 +25,7 @@
                             Регистрация
                         </a>
                     </div>
+                    @@include('../hamburger/_hamburger.html')
                 </div>
             </div>
         </div>
@@ -43,7 +44,7 @@
                     </a>
                 </li>
                 <li class="menu__item header__menu-item">
-                    <a class="menu__link header__menu-link" href="#">
+                    <a class="menu__link header__menu-link" href="#customers">
                         Кому подойдет
                     </a>
                 </li>
@@ -68,7 +69,7 @@
                     </a>
                 </li>
                 <li class="menu__item header__menu-item">
-                    <a class="menu__link header__menu-link" href="#">
+                    <a class="menu__link header__menu-link" href="#start">
                         Как получать грузы
                     </a>
                 </li>
@@ -78,6 +79,20 @@
                     </a>
                 </li>
             </ul>
+            <select class="header__lang">
+                <option value="ru">Ру</option>
+            </select>
+            <a class="header__question" href="#">
+                <span>Задать вопрос</span>
+            </a>
+            <div class="header__buttons">
+                <a class="button header__btn header__enter-btn button--transparent button--white-border" href="#">
+                    Вход
+                </a>
+                <a class="button header__btn" href="#">
+                    Регистрация
+                </a>
+            </div>
         </div>
     </nav>
 </header>

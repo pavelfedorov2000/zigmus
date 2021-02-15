@@ -59,7 +59,7 @@ function html() {
     return src(path.src.html)
         .pipe(fileinclude())
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(webphtml())
+        /* .pipe(webphtml()) */
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());
 }
@@ -107,21 +107,21 @@ function js() {
 
 function images() {
     return src(path.src.img)
-        .pipe(
+        /* .pipe(
             webp({
                 quality: 70
             })
-        )
-        .pipe(dest(path.build.img))
+        ) */
+        //.pipe(dest(path.build.img))
         .pipe(src(path.src.img))
-        .pipe(
+        /* .pipe(
             imagemin({
                 progressive: true,
                 svgoPlugins: [{ removeViewBox: false }],
                 interPlaced: true,
                 optimizationLevel: 3 // 0 to 7
             })
-        )
+        ) */
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream());
 }

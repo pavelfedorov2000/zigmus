@@ -8,16 +8,11 @@ $('.slider-start').slick({
     dots: true,
     responsive: [
         {
-            //breakpoint: ,
+            breakpoint: 768,
             settings: {
-                
+                vertical: false,
+                verticalSwiping: false,
             }
         },
-        {
-            //breakpoint: ,
-            settings: {
-                
-            }
-        }
     ]
 });

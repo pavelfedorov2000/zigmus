@@ -10,16 +10,12 @@ $('.slider-media').slick({
     variableWidth: true,
     responsive: [
         {
-            //breakpoint: ,
+            breakpoint: 768,
             settings: {
-                
+                slidesToShow: 1,
+                infinite: true,
+                arrows: false,
             }
         },
-        {
-            //breakpoint: ,
-            settings: {
-                
-            }
-        }
     ]
 });

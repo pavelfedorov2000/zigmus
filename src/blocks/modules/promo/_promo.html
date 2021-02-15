@@ -1,37 +1,44 @@
 <section class="promo" style="background-image: url(img/bg/promo_bg.jpg);">
     @@include('../header/_header.html')
     <div class="container">
-        <div class="promo__content">
-            <p class="promo__descr">
-                C помощью онлайн платформы по поиску грузов ZIGMUS
-            </p>
-            <h1 class="promo__title">
-                Получайте стабильный поток грузов, по всему миру
-            </h1>
-            <ul class="promo__list">
-                <li class="promo__list-item">
-                    от проверенных компаний
-                </li>
-                <li class="promo__list-item">
-                    в 1 клик
-                </li>
-                <li class="promo__list-item">
-                    без лишних действий
-                </li>
-            </ul>
-            <div class="buttons promo__buttons">
-                <a class="button promo__btn" href="#">
-                    Зарегистрироваться бесплатно
-                </a>
-                <a class="video-link promo__video" href="#">
-                    <div class="video-icon video-link__player promo__video-player"></div>
-                    Видео <br>
-                    о платформе
-                </a>
+        <div class="promo__inner">
+            <div class="promo__content">
+                <p class="promo__descr">
+                    C помощью онлайн платформы по поиску грузов ZIGMUS
+                </p>
+                <h1 class="promo__title">
+                    Получайте стабильный поток грузов, по всему миру
+                </h1>
+                <ul class="promo__list">
+                    <li class="promo__list-item">
+                        от проверенных компаний
+                    </li>
+                    <li class="promo__list-item">
+                        в 1 клик
+                    </li>
+                    <li class="promo__list-item">
+                        без лишних действий
+                    </li>
+                </ul>
+                <div class="buttons promo__buttons">
+                    <a class="button promo__btn" href="#">
+                        Зарегистрироваться бесплатно
+                    </a>
+                    <a class="video-link promo__video video-link--white" href="#video">
+                        <div class="video-player video-link__player promo__video-player video-player--small video-player--white">
+                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.71777 3.97089C8.38444 4.35579 8.38444 5.31804 7.71777 5.70294L1.71777 9.16704C1.05111 9.55194 0.217774 9.07082 0.217774 8.30102L0.217774 1.37281C0.217774 0.603012 1.05111 0.121887 1.71777 0.506787L7.71777 3.97089Z" fill="#F5F9FF"/>
+                            </svg>                                
+                        </div>
+                        Видео <br>
+                        о платформе
+                    </a>
+                </div>
             </div>
+            <!-- @@include('../notification/_notification.html') -->
         </div>
     </div>
-    <div class="promo__numbers">
+    <div class="promo__numbers container">
         <div class="promo__numbers-title">
             Сейчас на <span>ZIGMUS</span>
         </div>
@@ -39,22 +46,28 @@
             <ul class="promo__numbers-list numbers-promo">
                 <li class="numbers-promo__item">
                     <p class="numbers-promo__item-num">5.473</p>
-                    <p class="numbers-promo__item-subnum">Грузов</p>
+                    <p class="numbers-promo__item-text">Грузов</p>
                 </li>
                 <li class="numbers-promo__item">
                     <p class="numbers-promo__item-num">3.251</p>
-                    <p class="numbers-promo__item-subnum">Машин</p>
+                    <p class="numbers-promo__item-text">Машин</p>
                 </li>
                 <li class="numbers-promo__item">
                     <p class="numbers-promo__item-num">2 533</p>
-                    <p class="numbers-promo__item-subnum">Компаний</p>
+                    <p class="numbers-promo__item-text">Компаний</p>
                 </li>
                 <li class="numbers-promo__item">
                     <p class="numbers-promo__item-num">89%</p>
-                    <p class="numbers-promo__item-subnum">Проверенных</p>
+                    <p class="numbers-promo__item-text">Проверенных</p>
                 </li>
             </ul>
         </div>
     </div>
-    @@include('../notification/_notification.html')
+    <!-- <div class="promo__container-img">
+        <img class="promo__container-img" src="img/promo/container.png" alt="Контейнер Zigmus">
+    </div>
+    <div class="promo__man-img">
+        <img src="img/promo/businessman.png" alt="Бизнесмен">
+    </div> -->
+    <!-- <img class="promo__container-img" src="img/promo/container.png" alt="Контейнер Zigmus"> -->
 </section>

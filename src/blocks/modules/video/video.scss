@@ -1,37 +1,61 @@
 .video {
 
     height: 700px;
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    @media(max-width: 767px) {
+        height: 564px;
+        padding-top: 40px;
+        align-items: flex-start;
+        background-position: -125px 0;
+    }
 
 	// .video__inner
 	&__inner {
         @include center;
+        @media(max-width: 767px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
     }
     
 	// .video__player
 	&__player {
         width: 195px;
         height: 195px;
-        border-radius: 50%;
-        border: 2px solid $accent;
-        &:before, &:after {
-            content: '';
-            position: absolute;
-            @include centerXY;
+        @media(max-width: 767px) {
+            width: 84px;
+            height: 84px;
+        }
+        svg {
+            width: 34px;
+            height: 39px;
+            @media(max-width: 767px) {
+                width: 20px;
+                height: 20px;
+            }
         }
         &:before {
-           width: 161px;
-           height: 161px;
-           background-color: $accent;
-           box-shadow: 0px 0px 60px #FF6B00;
+            width: 161px;
+            height: 161px;
+            @media(max-width: 767px) {
+                width: 69px;
+                height: 69px;
+            }
         }
     }
     
 	// .video__content
 	&__content {
         margin-left: 133px;
+        @media(max-width: 767px) {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
     }
     
 	// .video__title
@@ -40,6 +64,9 @@
         font-size: 50px;
         line-height: 60px;
         margin-bottom: 34px;
+        @media(max-width: 767px) {
+            margin-bottom: 10px;
+        }
     }
     
 	// .video__aciton-text
@@ -47,5 +74,12 @@
         max-width: 395px;
         font-size: 25px;
         line-height: 30px;
+        @media(max-width: 767px) {
+            max-width: 100%;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
+            opacity: .7;
+        }
 	}
 }

@@ -13,10 +13,10 @@ $('.order-slider__inner').slick({
             }
         },
         {
-            //breakpoint: ,
+            breakpoint: 575,
             settings: {
-                
+                slidesToShow: 1,
             }
-        }
+        },
     ]
 });

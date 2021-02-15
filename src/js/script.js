@@ -16,7 +16,8 @@ $(function() {
 
     @@include('../blocks/modules/questions/questions.js')
 
-});
+    @@include('scroll.js')
 
+});
 
 
