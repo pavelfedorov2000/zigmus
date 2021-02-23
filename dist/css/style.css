@@ -108,6 +108,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
 textarea {
   resize: none;
 }
@@ -3469,7 +3473,6 @@ address {
 }
 
 .overlay {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -3568,7 +3571,6 @@ address {
 }
 
 .enter-popup {
-  display: none;
   min-height: 422px;
 }
 
@@ -3586,8 +3588,16 @@ address {
   text-align: center;
 }
 
+.enter-popup__phone-enter--hide {
+  display: none;
+}
+
 .enter-popup__email-enter {
   display: none;
+}
+
+.enter-popup__email-enter--show {
+  display: block;
 }
 
 .register-popup {
