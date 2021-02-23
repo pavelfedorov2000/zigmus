@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     @@include('../blocks/modules/hamburger/hamburger.js')
 
@@ -16,8 +16,8 @@ $(function() {
 
     @@include('../blocks/modules/questions/questions.js')
 
+    @@include('../blocks/modules/popups/popups.js')
+
     @@include('scroll.js')
 
 });
-
-

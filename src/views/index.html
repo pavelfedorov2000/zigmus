@@ -40,10 +40,67 @@
 
         @@include('../blocks/modules/questions/_questions.html')
 
-        @@include('../blocks/modules/footer/_footer.html')
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo footer__logo">
+                        <img class="logo__img footer__logo-img" src="img/logo/zigmus-logo.svg" alt="">
+                        <p class="logo__descr footer__logo-descr">
+                            Здесь вы найдете любой транспорт и груз
+                        </p>
+                    </div>
+                    <address class="footer__item footer__address tablet">
+                        al. Jana Pawła II, 27, 00-867 Warszawa, kraj Polska
+                    </address>
+                    <div class="footer__content">
+                        <address class="footer__item footer__address">
+                            al. Jana Pawła II, 27, 00-867 Warszawa, kraj Polska
+                        </address>
+                        <div class="footer__item footer__politics">
+                            <a class="footer__politics-link" href="#">
+                                <span>Пользовательское соглашение</span>
+                            </a>
+                            <a class="footer__politics-link" href="#">
+                                <span>Политика конфиденциальности</span>
+                            </a>
+                        </div>
+                        <ul class="footer__item footer__socials">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-icon" src="img/icons/socials/vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-icon" src="img/icons/socials/facebook.svg"
+                                        alt="facebook">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-icon" src="img/icons/socials/instagram.svg"
+                                        alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__item footer__developer">
+                            <img class="footer__developer-logo" src="img/logo/lead-me.svg" alt="Lead Me logo">
+                            <q class="footer__developer-slogan">
+                                Соединяем бизнес
+                                и клиентов в Digital
+                                пространстве
+                            </q>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        @@include('../blocks/modules/popups/_popups.html')
 
         @@include('_js.html')
     </div>
 
 </body>
+
 </html>

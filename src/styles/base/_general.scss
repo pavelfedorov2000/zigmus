@@ -5,8 +5,14 @@
 }
 
 .wrapper {
-    //position: relative;
+    position: relative;
     overflow-x: hidden;
+}
+
+.icon-wrap {
+    @include center;
+    border-radius: 50%;
+    background-color: $blue;
 }
 
 .section {
@@ -15,6 +21,7 @@
     @media(max-width: 1200px) {
         padding: 100px 0;
     }
+
     @media(max-width: 991px) {
         padding: 80px 0;
     }
@@ -37,13 +44,16 @@
         font-size: 36px;
         line-height: 43px;
         text-align: center;
+
         &--left {
             text-align: left;
             //margin: 0;
         }
+
         &--white {
             color: #fff;
         }
+
         @media(max-width: 575px) {
             font-size: 22px;
             line-height: 26px;
@@ -54,13 +64,16 @@
         font-size: 16px;
         line-height: 26px;
         text-align: center;
+
         &--left {
             text-align: left;
         }
+
         @media(max-width: 575px) {
             font-size: 14px;
             line-height: 17px;
         }
+
         span {
             font-weight: 700;
         }
@@ -79,3 +92,4 @@
 @import '../components/tabs';
 @import '../components/range';
 @import '../components/video-player';
+@import '../components/field';

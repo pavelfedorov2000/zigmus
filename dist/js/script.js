@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     $('.hamburger-btn').on('click', function() {
     $('.hamburger-btn').toggleClass('hamburger-btn--active');
@@ -128,6 +128,20 @@ $("#price").ionRangeSlider({
     $(this).parent().toggleClass('questions__item--active');   
 });
 
+    $('.popup__close-btn').on('click', function () {
+    $('.overlay, .popup').fadeOut('slow');
+});
+
+$('.filter-style').styler();
+
+$('input[name=phone]').mask("+375 (99) 999-99-99");
+
+$('#email-enter').on('click', function () {
+    $(this).css('display', 'none');
+    $('.enter-popup__phone-enter').css('display', 'none');
+    $('.enter-popup__email-enter').css('display', 'block');
+});
+
     $("a[href^='#']").click(function(){
     const href = $(this).attr("href");
     $("html, body").animate({scrollTop: $(href).offset().top+"px"}); // плавный скролл по ссылкам
@@ -135,5 +149,3 @@ $("#price").ionRangeSlider({
 });
 
 });
-
-
