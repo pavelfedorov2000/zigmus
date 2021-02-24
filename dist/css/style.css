@@ -3604,6 +3604,9 @@ address {
 .register-popup {
   width: 750px;
   min-height: 630px;
+}
+
+.register-popup__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

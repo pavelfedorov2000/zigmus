@@ -2,7 +2,10 @@
     //display: none;
     width: 750px;
     min-height: 630px;
-    display: flex;
+
+    &__inner {
+        display: flex;
+    }
 
     &__block {
         padding: 50px 40px;
