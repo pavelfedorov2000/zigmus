@@ -1,7 +1,8 @@
 .register-popup {
-    display: none;
+    //display: none;
     width: 750px;
     min-height: 630px;
+    display: flex;
 
     &__block {
         padding: 50px 40px;
@@ -89,6 +90,7 @@
     // .register-popup__benefits-item
 
     &__benefits-item {
+        display: flex;
         align-items: center;
 
         span {

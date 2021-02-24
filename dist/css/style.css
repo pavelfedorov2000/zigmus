@@ -3571,6 +3571,7 @@ address {
 }
 
 .enter-popup {
+  display: none;
   min-height: 422px;
 }
 
@@ -3601,9 +3602,11 @@ address {
 }
 
 .register-popup {
-  display: none;
   width: 750px;
   min-height: 630px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .register-popup__block {
@@ -3674,6 +3677,9 @@ address {
 }
 
 .register-popup__benefits-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
