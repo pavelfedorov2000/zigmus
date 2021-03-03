@@ -3473,6 +3473,7 @@ address {
 }
 
 .overlay {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -3602,6 +3603,7 @@ address {
 }
 
 .register-popup {
+  display: none;
   width: 750px;
   min-height: 630px;
 }
@@ -3700,7 +3702,7 @@ address {
 
 .register-popup__benefits-item span:before,
 .register-popup__benefits-item span:after {
-  content: '';
+  content: "";
   position: absolute;
   position: absolute;
   left: 50%;

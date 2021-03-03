@@ -1,5 +1,5 @@
 .register-popup {
-    //display: none;
+    display: none;
     width: 750px;
     min-height: 630px;
 
@@ -22,19 +22,22 @@
     // .register-popup__title
 
     &__title {
-
         // .register-popup__title--white
     }
 
-    &__form-item {}
+    &__form-item {
+    }
 
-    &__form-label {}
+    &__form-label {
+    }
 
-    &__form-input {}
+    &__form-input {
+    }
 
     // .register-popup__email-link
 
-    &__link {}
+    &__link {
+    }
 
     // .register-popup__btn
 
@@ -107,7 +110,7 @@
 
             &:before,
             &:after {
-                content: '';
+                content: "";
                 position: absolute;
                 @include centerXY;
             }
@@ -123,7 +126,7 @@
             &:after {
                 width: 14px;
                 height: 10px;
-                background-image: url('../img/icons/blue-check.svg');
+                background-image: url("../img/icons/blue-check.svg");
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -131,7 +134,7 @@
         }
     }
 
-    &__benefits-item+&__benefits-item {
+    &__benefits-item + &__benefits-item {
         margin-top: 10px;
     }
 }

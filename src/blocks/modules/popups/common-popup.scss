@@ -1,5 +1,5 @@
 .overlay {
-    //display: none;
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -56,7 +56,8 @@
         margin-bottom: 20px;
     }
 
-    &__form-label {}
+    &__form-label {
+    }
 
     &__form-input {
         //width: 100%;
